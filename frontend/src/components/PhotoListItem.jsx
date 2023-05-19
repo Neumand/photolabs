@@ -4,9 +4,13 @@ import '../styles/PhotoListItem.scss';
 
 const PhotoListItem = ({ username, imageSource, id, hideUserName }) => {
   return (
-    <span>
-      <img src={imageSource} alt={`Photo submitted by ${username}`} />
-    </span>
+    <div className='photo-list--item'>
+      <img
+        className='photo-list--image'
+        src={imageSource}
+        alt={`Photo submitted by ${username}`}
+      />
+    </div>
   );
 };
 
