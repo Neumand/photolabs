@@ -1,6 +1,7 @@
 import React from 'react';
 
 import '../styles/PhotoListItem.scss';
+import PhotoFavButton from './PhotoFavButton';
 
 const PhotoListItem = ({ username, imageSource, id, hideUserName }) => {
   return (
@@ -10,6 +11,7 @@ const PhotoListItem = ({ username, imageSource, id, hideUserName }) => {
         src={imageSource}
         alt={`Photo submitted by ${username}`}
       />
+      <PhotoFavButton />
     </div>
   );
 };
