@@ -39,6 +39,24 @@ PhotoList.defaultProps = {
       id: 3,
       hideUserName: false,
     },
+    {
+      username: 'Jacob',
+      imageSource: `${process.env.PUBLIC_URL}/Image.jpg`,
+      id: 4,
+      hideUserName: false,
+    },
+    {
+      username: 'Jacob',
+      imageSource: `${process.env.PUBLIC_URL}/Image.jpg`,
+      id: 5,
+      hideUserName: false,
+    },
+    {
+      username: 'Jacob',
+      imageSource: `${process.env.PUBLIC_URL}/Image.jpg`,
+      id: 6,
+      hideUserName: false,
+    },
   ],
 };
 

@@ -1,10 +1,14 @@
 import React from 'react';
 
+import PhotoList from '../components/PhotoList';
+import TopNavigation from '../components/TopNavigationBar';
 import '../styles/HomeRoute.scss';
 
-const HomeRoute = () => 
-  <div className="home-route">
-    {/* Insert React */}
+const HomeRoute = () => (
+  <div className='home-route'>
+    <TopNavigation />
+    <PhotoList />
   </div>
+);
 
 export default HomeRoute;
