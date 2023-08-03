@@ -10,7 +10,8 @@ const PhotoList = ({ photos }) => {
         <PhotoListItem
           key={photo.id}
           id={photo.id}
-          username={photo.user.name}
+          user={photo.user}
+          location={photo.location}
           hideUserName={photo.hideUserName}
           imageSource={photo.urls.regular}
         />
