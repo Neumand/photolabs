@@ -3,7 +3,15 @@ import React from 'react';
 import '../styles/PhotoListItem.scss';
 import PhotoFavButton from './PhotoFavButton';
 
-const PhotoListItem = ({ user, location, imageSource, id, hideUserName }) => {
+const PhotoListItem = ({
+  user,
+  location,
+  imageSource,
+  id,
+  hideUserName,
+  selected,
+  toggleFavorite,
+}) => {
   return (
     <div className='photo-list--item'>
       <div className='photo-list--user-details'>
@@ -20,7 +28,7 @@ const PhotoListItem = ({ user, location, imageSource, id, hideUserName }) => {
         src={imageSource}
         alt={`Photo submitted by ${user.username}`}
       />
-      <PhotoFavButton />
+      <PhotoFavButton id={id} selected={selected} onClick={toggleFavorite} />
     </div>
   );
 };
